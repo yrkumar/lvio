@@ -13,7 +13,7 @@ typedef struct {                /* File reference number information record. */
     int16 openMode;             /* Store the open mode to be used when re-opening the file
                                    with deny access. */
 } FileRefNumInfo, *FileRefNumInfoPtr;
+    FileRefNumInfo STDIN = {path = 0, (File)stdin}
 
-FileRefNumInfo stdFile(char *name){
-    // TODO
+FileRefNumInfo stdIn(){
 }
