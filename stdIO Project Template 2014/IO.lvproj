@@ -16,6 +16,10 @@
 				<Item Name="Read From Pipe.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Read From Pipe.vi"/>
 				<Item Name="Write To Pipe.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Write To Pipe.vi"/>
 			</Item>
+			<Item Name="Linux stdIO Access.vi" Type="VI" URL="../Linux stdIO Access.vi"/>
+			<Item Name="stderr.vi" Type="VI" URL="../stderr.vi"/>
+			<Item Name="stdin.vi" Type="VI" URL="../stdin.vi"/>
+			<Item Name="stdout.vi" Type="VI" URL="../stdout.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
