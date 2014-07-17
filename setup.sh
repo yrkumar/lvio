@@ -1,6 +1,16 @@
+
+
+TEMPLATES='/usr/local/natinst/LabVIEW-2014/ProjectTemplates'
+
+if [ -d /usr/local/natinst/LabVIEW-2014-64 ]
+then 
+TEMPLATES='/usr/local/natinst/LabVIEW-2014-64/ProjectTemplates'
+fi
+
+echo $TEMPLATES
+
 echo "Copying files to templates directory..."
-tar xvf std\ IO\ Project\ Template.tar.gz -C /usr/local/natinst/LabVIEW-2014-64/ProjectTemplates/Source
+tar xvf projecttemplate.tar.gz -C ${TEMPLATES}/Source
 
 echo "Copying xml metadata..."
-cp NILV_stdIO_Template_Metadata.xml  /usr/local/natinst/LabVIEW-2014-64/ProjectTemplates/Metadata
-
+cp NILV_stdIO_Template_Metadata.xml ${TEMPLATES}/MetaData
