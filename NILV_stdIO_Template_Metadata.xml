@@ -7,8 +7,7 @@
   <Keywords localize="yes">stdin;stdout;stderr;stdio;linux;redirect</Keywords>
   <LocationPath>stdIO Project Template 2014</LocationPath>
   <ProjectPath>IO.lvproj</ProjectPath>>
-  <ListboxImagePath>images/statemachine_small.png</ListboxImagePath>
-  <!--<ListboxImagePath>images/stdio.png</ListboxImagePath> -->
+  <ListboxImagePath>images/stdIO_redirect_main.png</ListboxImagePath>
   <CustomVIMode>None</CustomVIMode>
   <SortPriority>300</SortPriority>
 </ProjectTemplate>
