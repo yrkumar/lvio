@@ -7,9 +7,9 @@ extern "C" {
 #endif
 
 /*!
- * ReadWrite
+ * This VI will be executed when the compiled executable is called.
  */
-void __cdecl ReadWrite(void);
+void __cdecl VIMain(void);
 
 MgErr __cdecl LVDLLStatus(char *errStr, int errStrLen, void *module);
 

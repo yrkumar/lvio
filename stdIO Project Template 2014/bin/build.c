@@ -1,6 +1,6 @@
 #include "IO.h"
 
 int main() {
-	ReadWrite();
+	VIMain();
 	return 0;
 }
