@@ -10,10 +10,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Makefile" Type="Document" URL="../bin/Makefile"/>
-		<Item Name="Post-Build Action.vi" Type="VI" URL="../Post-Build Action.vi"/>
+		<Item Name="bin" Type="Folder">
+			<Item Name="Makefile" Type="Document" URL="../bin/Makefile"/>
+			<Item Name="build.c" Type="Document" URL="../bin/build.c"/>
+		</Item>
+		<Item Name="postbuild" Type="Folder">
+			<Item Name="Post-Build Action.vi" Type="VI" URL="../Post-Build Action.vi"/>
+		</Item>
 		<Item Name="VIMain.vi" Type="VI" URL="../VIMain.vi"/>
-		<Item Name="build.c" Type="Document" URL="../bin/build.c"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Read From Pipe.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Read From Pipe.vi"/>
@@ -26,7 +30,7 @@
 			<Item Name="stdout.vi" Type="VI" URL="../stdout.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="IO.so" Type="DLL">
+			<Item Name="Build Executable" Type="DLL">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{268EF7C1-0E91-11E4-B095-000C2909FF6E}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{268EF264-0E91-11E4-B095-000C2909FF6E}</Property>
@@ -34,20 +38,20 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{268F3CAA-0E91-11E4-B095-000C2909FF6E}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">Creates a shared library as a template and builds a C application as a wrapper in order to allow for commandline interfacing.</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">IO.so</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Build Executable</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../bin</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Post-Build Action.vi</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/postbuild/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{268F3A4D-0E91-11E4-B095-000C2909FF6E}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Destination[0].destName" Type="Str">IO.so</Property>
-				<Property Name="Destination[0].path" Type="Path">../bin/NI_AB_PROJECTNAME.so</Property>
+				<Property Name="Destination[0].destName" Type="Str">Redirection_Shared_Library.so</Property>
+				<Property Name="Destination[0].path" Type="Path">../bin/Redirection_Shared_Library.so</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -59,18 +63,18 @@
 				<Property Name="Dll_headerGUID" Type="Str">{268EC241-0E91-11E4-B095-000C2909FF6E}</Property>
 				<Property Name="Dll_libGUID" Type="Str">{268EBA8C-0E91-11E4-B095-000C2909FF6E}</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{18E3E8D6-0E91-11E4-B9F5-000C2909FF6E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{08CFECBD-1DA3-11E4-A7C6-000C29334891}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/VIMain.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">ExportedVI</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">IO.so</Property>
-				<Property Name="TgtF_internalName" Type="Str">IO.so</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Build Executable</Property>
+				<Property Name="TgtF_internalName" Type="Str">Build Executable</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright 2014 </Property>
-				<Property Name="TgtF_productName" Type="Str">IO.so</Property>
+				<Property Name="TgtF_productName" Type="Str">Build Executable</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{268F3687-0E91-11E4-B095-000C2909FF6E}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">IO.so</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Redirection_Shared_Library.so</Property>
 			</Item>
 		</Item>
 	</Item>

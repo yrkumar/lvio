@@ -1,4 +1,4 @@
-#include "IO.h"
+#include "Redirection_Shared_Library.h"
 
 int main() {
 	VIMain();
