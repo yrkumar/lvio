@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='windows-1252' standalone='yes'?>
 <MetaData>
 <ProjectTemplate>
-  <Title localize="yes">Stdio Redirection Template</Title>
+  <Title localize="yes">Linux Standard I/O Redirection</Title>
   <Description localize="yes">Allows redirection of stdin, stdout, and stderr with LabVIEW and allows it to be called from the command line.</Description>
   <Filters localize="yes">Templates:Desktop</Filters>
-  <Keywords localize="yes">stdin;stdout;stderr;stdio;linux;redirect</Keywords>
+  <Keywords localize="yes">stdin;stdout;stderr;stdio;linux;redirect;redirection</Keywords>
   <LocationPath>StdIO</LocationPath>
   <ProjectPath>IO.lvproj</ProjectPath>>
   <ListboxImagePath>images/stdIO_redirect_main.png</ListboxImagePath>
